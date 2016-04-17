@@ -1,3 +1,7 @@
+# app/serializers/author_serializer.rb
+
 class AuthorSerializer < ActiveModel::Serializer
-  attributes :id
+  attributes :id, :name, :discount
+  has_many :books
+  has_many :published
 end
